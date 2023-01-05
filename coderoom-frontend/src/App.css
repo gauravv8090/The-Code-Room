@@ -50,18 +50,19 @@ footer{
     border: none;
     padding: 10px;
     border-radius: 5px;
+    font-weight: bold;
     font-size: 16px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
 
-.joinBtn{
+.joinBtn, .leaveBtn{
     background-color:#c8f023;
     width: 100px;
     margin-left: auto;
 }
 
-.joinBtn:hover{
+.joinBtn:hover, .leaveBtn:hover{
     background-color: #c7f023a7;
 }
 
@@ -84,4 +85,57 @@ footer{
 
 footer a{
     color: #c8f023;
+}
+
+.MainWrapper{
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    height: 100vh;
+}
+
+.left{
+    background-color: #0c0c10;
+    padding: 16px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.leftInner{
+    flex: 1;
+
+}
+.clientList{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.client{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold; 
+}
+.userName{
+    margin-top: 10px;
+}
+.logo{
+    border-bottom: 1px solid #424242;
+    padding-bottom: 10px;
+}
+.logoImage{
+ height: 60px;   
+}
+
+.leaveBtn{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.CodeMirror{
+    font-size: 20px;
+    line-height: 1.6;
+    padding-top: 20px;
+    min-height: calc(100vh - 20px);
 }
